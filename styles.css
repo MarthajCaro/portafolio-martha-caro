@@ -1,0 +1,84 @@
+:root {
+    --color-bg: #1e1e2f;
+    /* fondo principal */
+    --color-bg-secondary: #2a2a40;
+    --color-primary: #4ea8de;
+    /* azul tech */
+    --color-accent: #64ffda;
+    /* verde tipo código */
+    --color-text: #ffffff;
+    --color-text-secondary: #c9d1d9;
+    --color-card: #2d2d44;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: var(--color-bg-secondary);
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--color-text);
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--color-accent);
+}
+
+.descripcion {
+    padding: 80px 40px;
+}
+
+.descripcion h1 {
+    font-size: 48px;
+}
+
+.descripcion p {
+    color: var(--color-text-secondary);
+}
+
+.descripcion a {
+    display: inline-block;
+    margin-right: 15px;
+    padding: 12px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.descripcion a:first-child {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.descripcion a:last-child {
+    border: 1px solid var(--color-accent);
+    color: var(--color-accent);
+}
+
+section {
+    padding: 60px 40px;
+}
+
+.card {
+    background-color: var(--color-card);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
