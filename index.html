@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio Martha Caro</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
@@ -12,35 +13,141 @@
     <nav>
         <h3>Martha Caro</h3>
         <div>
-            <a herf="proyectos">Proyectos</a>
-            <a herf="sobre mi">Sobre mi</a>
-            <a herf="tecnologias">Tecnologias</a>
-            <a herf="contacto">Contacto</a>
+            <a href="#proyectos">Ver proyectos</a>
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#tecnologias">Tecnologias</a>
+            <a href="#contacto">Contacto</a>            
+            
         </div>
     </nav>
 
+<main>
+
 <section class="descripcion">
-    <h1>¡Hola! Soy Martha Caro</h1>
-    <p>Me gusta crear soluciones web funcionales, <br>
-        aprender cada día y enfrentar nuevos desafios.</p>
-    <a href="#">Descargar CV</a>
+    <h1>¡Hola! Soy Martha Caro 👋</h1>
+
+    <p>Desarrolladora en formación enfocada en la creación de soluciones web funcionales. <br>
+        Me gusta aprender constantemente y enfrentar nuevos desafíos en el mundo del desarrollo.</p>
+
+    <a href="#" class="btn-primary">Ver CV</a>
+    <a href="cv.pdf" download class="btn-outline">Descargar CV</a>
+
 </section>
 
 <section id="proyectos">
     <h2>Proyectos</h2>
+
+        <div class="card">
+            <h3>Portafolio Web personal</h3>
+
+            <p>
+            Este proyecto consiste en el desarrollo de mi portafolio personal, donde presento 
+            mi información,  habilidades y proyectos. 
+            </p>
+
+            <p>
+
+        <strong>Tecnologías:</strong> HTML, CSS, JavaScript, Java
+        </p>
+
+        <p>
+        <strong>Desafío:</strong> lograr una estructura clara y un diseño atractivo basado en Figma.
+        </p>
+
+
+    </div>
+
 </section>
 
-<section id="sobre mi">
-    <h2>Sobre mi</h2>
+<section id="sobre-mi">
+
+    <div  class="card sobre-mi">
+        <h2>Sobre mí</h2>
+
+        <p>
+        Soy una desarrolladora en formación apasionada por la tecnología y el desarrollo web. <br>
+        Actualmente me encuentro aprendiendo y fortaleciendo mis habilidades en HTML, CSS y <br> 
+        JavaScript, con el objetivo de crear aplicaciones funcionales y bien estructuradas.
+
+        </p>
+
+        <p>
+        Me interesa seguir creciendo en el área de desarrollo backend y bases de datos, <br>
+        especialmente con tecnologías como Java y PostgreSQL. <br>
+        Disfruto resolver problemas y aprender algo nuevo cada día.
+
+        </p>
+
+    </div>
+
 </section>
 
 <section id="tecnologias">
     <h2>Tecnologias</h2>
+
+    <div class="tech-container">
+
+        <div class="card">
+            <i class="fab fa-html5"></i> HTML
+        </div>
+
+        <div class="card">
+            <i class="fab fa-css3-alt"></i> CSS
+        </div>
+
+        <div class="card">
+            <i class="fab fa-js"></i> JavaScript
+        </div>
+
+        <div class="card">
+            <i class="fab fa-java"></i> Java
+        </div>
+    </div>
+
 </section>
     
 <section id="contacto">
     <h2>Contacto</h2>
+
+    <div class="contenedor-cards">
+
+        <div class="card">
+            <h3>Email</h3>
+
+            <p>
+                <i class="fas fa-envelope"></i> 
+                <a href="mailto:caromartha175@gmail.com">
+                    caromartha175@gmail.com
+                </a>
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>LinkedIn</h3>
+
+            <p>
+                <i class="fab fa-linkedin"></i> 
+                <a href="https://www.linkedin.com/in/marthacaro" target="_blank">
+                    linkedin.com/in/marthacaro
+                </a>    
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>GitHub</h3>
+
+            <p>
+                <i class="fab fa-github"></i> 
+                <a href="https://github.com/MarthajCaro" target="_blank">
+                    github.com/MarthajCaro
+                </a>
+            </p>
+        
+        </div>
+    </div>
 </section>
+
+</main>
 
 </body>
 </html>
