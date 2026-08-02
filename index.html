@@ -4,150 +4,157 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio Martha Caro</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav>
-        <h3>Martha Caro</h3>
-        <div>
-            <a href="#proyectos">Ver proyectos</a>
-            <a href="#sobre-mi">Sobre mí</a>
-            <a href="#tecnologias">Tecnologias</a>
-            <a href="#contacto">Contacto</a>            
-            
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-light rounded-pill m-3 px-4">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Martha Caro</a>
+
+            <!-- BOTÓN -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- MENÚ -->
+            <div class="collapse navbar-collapse justify-content-center" id="menu">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tecnologias">Tecnologías</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-<main>
-
-<section class="descripcion">
-    <h1>¡Hola! Soy Martha Caro 👋</h1>
-
-    <p>Desarrolladora en formación enfocada en la creación de soluciones web funcionales. <br>
-        Me gusta aprender constantemente y enfrentar nuevos desafíos en el mundo del desarrollo.</p>
-
-    <a href="#" class="btn-primary">Ver CV</a>
-    <a href="cv.pdf" download class="btn-outline">Descargar CV</a>
-
-</section>
-
-<section id="proyectos">
-    <h2>Proyectos</h2>
-
-        <div class="card">
-            <h3>Portafolio Web personal</h3>
-
-            <p>
-            Este proyecto consiste en el desarrollo de mi portafolio personal, donde presento 
-            mi información,  habilidades y proyectos. 
-            </p>
-
-            <p>
-
-        <strong>Tecnologías:</strong> HTML, CSS, JavaScript, Java
-        </p>
-
-        <p>
-        <strong>Desafío:</strong> lograr una estructura clara y un diseño atractivo basado en Figma.
-        </p>
-
-
-    </div>
-
-</section>
-
-<section id="sobre-mi">
-
-    <div  class="card sobre-mi">
-        <h2>Sobre mí</h2>
-
-        <p>
-        Soy una desarrolladora en formación apasionada por la tecnología y el desarrollo web. <br>
-        Actualmente me encuentro aprendiendo y fortaleciendo mis habilidades en HTML, CSS y <br> 
-        JavaScript, con el objetivo de crear aplicaciones funcionales y bien estructuradas.
-
-        </p>
-
-        <p>
-        Me interesa seguir creciendo en el área de desarrollo backend y bases de datos, <br>
-        especialmente con tecnologías como Java y PostgreSQL. <br>
-        Disfruto resolver problemas y aprender algo nuevo cada día.
-
-        </p>
-
-    </div>
-
-</section>
-
-<section id="tecnologias">
-    <h2>Tecnologias</h2>
-
-    <div class="tech-container">
-
-        <div class="card">
-            <i class="fab fa-html5"></i> HTML
-        </div>
-
-        <div class="card">
-            <i class="fab fa-css3-alt"></i> CSS
-        </div>
-
-        <div class="card">
-            <i class="fab fa-js"></i> JavaScript
-        </div>
-
-        <div class="card">
-            <i class="fab fa-java"></i> Java
-        </div>
-    </div>
-
-</section>
-    
-<section id="contacto">
-    <h2>Contacto</h2>
-
-    <div class="contenedor-cards">
-
-        <div class="card">
-            <h3>Email</h3>
-
-            <p>
-                <i class="fas fa-envelope"></i> 
-                <a href="mailto:caromartha175@gmail.com">
-                    caromartha175@gmail.com
-                </a>
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>LinkedIn</h3>
-
-            <p>
-                <i class="fab fa-linkedin"></i> 
-                <a href="https://www.linkedin.com/in/marthacaro" target="_blank">
-                    linkedin.com/in/marthacaro
-                </a>    
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>GitHub</h3>
-
-            <p>
-                <i class="fab fa-github"></i> 
-                <a href="https://github.com/MarthajCaro" target="_blank">
-                    github.com/MarthajCaro
-                </a>
-            </p>
+    <section class="container py-5" id="inicio">
+        <div class="row align-items-center text-center text-md-start justify-content-center">
         
+    <!-- TEXTO -->
+        <div class="col-md-6">
+        <h1>¡Hola!, soy <strong>Martha Caro</strong></h1>
+        <p>
+            Me apasiona crear soluciones web funcionales, aprender continuamente y enfrentar nuevos desafíos.
+            Disfruto especialmente resolver problemas paso a paso y transformar ideas en soluciones reales que
+            aporten valor y ayuden a las personas.
+        </p>
+
+        <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+        <a href="cv.pdf" class="btn btn-outline-light">Descargar CV</a>
+    </div>
+
+    <!-- IMAGEN -->
+        <div class="col-12 col-md-6 text-center mt-4 mt-md-0">
+            <img src="img/fot.png" class="img-fluid" alt="perfil">
         </div>
+
     </div>
 </section>
 
-</main>
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="container text-center py-5">
+        <h2>PROYECTOS</h2>
+        <p>Algunos de los proyectos en los que he trabajado</p>
+
+        <div class="row">
+
+            <div class="col-12 col-md-4">
+                <div class="card p-4">
+                    <h5>Página web</h5>
+                    <p>En desarrollo...</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <div class="card p-4">
+                    <h5>SAFE</h5>
+                    <p>En desarrollo...</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <div class="card p-4">
+                    <h5>Planificador</h5>
+                    <p>En desarrollo...</p>
+                </div>
+            </div>
+        </div>
+</section>
+
+<!-- SOBRE MI -->
+<section id="sobre-mi" class="container py-5 text-white">
+    <div class="row align-items-center">
+
+        <div class="col-md-6">
+            <img src="img/pc.jpeg" class="img-fluid">
+        </div>
+
+    <div class="col-md-6">
+        <h2>Sobre mí</h2>
+            <p>
+            Soy Analista y desarrolladora de Sortware egresada de formación tecnológica.
+            Actualmente me estoy especializando en desarrollo web a través del bootcamp de Generation.
+            Me interesa crear aplicaciones funcionales, seguir aprendiendo y mejorar mis habilidades cada día.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- TECNOLOGÍAS -->
+<section id="tecnologias" class="container text-center py-5">
+    <h2>Tecnologías</h2>
+    
+    <div class="d-flex justify-content-center gap-4 flex-wrap fs-2">
+
+        <i class="devicon-html5-plain colored"></i>
+        <i class="devicon-css3-plain colored"></i>
+        <i class="devicon-javascript-plain colored"></i>
+        <i class="devicon-java-plain colored"></i>
+        <i class="devicon-postgresql-plain colored"></i>
+        <i class="devicon-github-original"></i>
+
+    </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="container text-center py-5 text-white">
+    <h2>Contacto</h2>
+    <div class="d-flex justify-content-center gap-4">
+    <a href="//www.linkedin.com/in/marthacaro" target="_blank">
+        <i class="bi bi-linkedin"></i>
+    </a>
+    <a href="https://github.com/MarthajCaro" target="_blank">
+        <i class="bi bi-github"></i>
+    </a>
+    <a href="maito:caromartha175@gmail.com">
+        <i class="bi bi-envelope-fill"></i>
+    </a>
+
+</div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+
+<footer class="bg-dark text-white text-center py-4 mt-5">
+    <div class="container">
+        <p class="mb-1">Gracias por visitar mi portafolio 💜</p>
+        <small>© 2026 Martha Caro | Todos los derechos reservados</small>
+    </div>
+</footer>
 
 </body>
 </html>
