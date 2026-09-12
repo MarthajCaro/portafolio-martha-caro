@@ -1,160 +1,343 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio Martha Caro</title>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Martha Caro | Junior Full Stack Developer</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="dark-theme">
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+          <!-- Isotipo Gráfico SVG -->
+          <svg
+            width="42"
+            height="42"
+            viewBox="0 0 100 100"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <!-- Hexágono de fondo -->
+            <path
+              d="M50 5 L93 30 V70 L50 95 L7 70 V30 Z"
+              fill="rgba(6, 182, 212, 0.1)"
+              stroke="#06b6d4"
+              stroke-width="4"
+            />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <link rel="stylesheet" href="styles.css">
+            <!-- Letra M central -->
+            <path
+              d="M28 65 V40 L50 55 L72 40 V65"
+              fill="none"
+              stroke="#ffffff"
+              stroke-width="8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-</head>
-
-<body>
-
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg bg-light rounded-pill m-3 px-4">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Martha Caro</a>
-
-            <!-- BOTÓN -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- MENÚ -->
-            <div class="collapse navbar-collapse justify-content-center" id="menu">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#tecnologias">Tecnologías</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-                </ul>
-            </div>
+            <!-- Nodo de conexión (punto inferior) -->
+            <circle cx="50" cy="75" r="5" fill="#06b6d4" />
+          </svg>
+          <!-- Texto del Logo -->
+          <span class="fw-bold text-white fs-5 mb-0">Martha Caro</span>
+        </a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <i class="fas fa-bars text-white"></i>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav align-items-center gap-3">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Habilidades</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
-    <section class="container py-5" id="inicio">
-        <div class="row align-items-center text-center text-md-start justify-content-center">
-        
-    <!-- TEXTO -->
-        <div class="col-md-6">
-        <h1>¡Hola!, soy <strong>Martha Caro</strong></h1>
-        <p>
-            Me apasiona crear soluciones web funcionales, aprender continuamente y enfrentar nuevos desafíos.
-            Disfruto especialmente resolver problemas paso a paso y transformar ideas en soluciones reales que
+    <main class="container content-wrapper pt-5 mt-5">
+      <section id="about" class="row align-items-center min-vh-75 py-5">
+        <div
+          class="col-lg-6 order-2 order-lg-1 text-center text-lg-start mt-5 mt-lg-0"
+        >
+          <h1 class="display-4 fw-bold mb-2 text-primary-custom">
+            Hola, soy Martha Caro Muñoz.
+          </h1>
+          <h2 class="h3 text-muted mb-4">Junior Full Stack Developer.</h2>
+          <p class="lead text-primary-custom mb-4">
+            Me apasiona crear soluciones web funcionales, aprender continuamente
+            y enfrentar nuevos desafíos. Disfruto especialmente resolver
+            problemas paso a paso y transformar ideas en soluciones reales que
             aporten valor y ayuden a las personas.
+          </p>
+
+          <div
+            class="d-flex gap-3 justify-content-center justify-content-lg-start mb-4"
+          >
+            <a
+              href="#projects"
+              class="btn btn-primary custom-btn-primary px-4 py-2"
+              >Ver Proyectos</a
+            >
+            <a
+              href="cv.pdf"
+              target="_blank"
+              class="btn btn-outline-light custom-btn-outline px-4 py-2"
+              >Descargar CV</a
+            >
+          </div>
+
+          <div
+            class="d-flex gap-4 justify-content-center justify-content-lg-start fs-3 social-links"
+          >
+            <a
+              href="//www.linkedin.com/in/marthacaro"
+              target="_blank"
+              aria-label="LinkedIn"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a
+              href="https://github.com/MarthajCaro"
+              target="_blank"
+              aria-label="GitHub"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="maito:caromartha175@gmail.com" aria-label="Correo"
+              ><i class="fas fa-envelope"></i
+            ></a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 d-flex justify-content-center">
+          <div class="blob-container">
+            <img
+              src="fotMartha.png"
+              alt="Foto de Martha Caro"
+              class="profile-pic"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="py-5 mt-5">
+        <h3 class="fw-bold mb-5 text-primary-custom">Proyectos Destacados</h3>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 custom-card d-flex flex-column">
+              <div class="card-body flex-grow-1">
+                <h4 class="card-title fw-bold text-primary-custom mb-3">
+                  ClinicaApp
+                </h4>
+                <p class="card-text text-muted mb-2">
+                  <strong class="text-primary-custom">El problema:</strong> La
+                  gestión de servicios de salud requería optimización y control
+                  centralizado de usuarios.
+                </p>
+                <p class="card-text text-muted mb-3">
+                  <strong class="text-primary-custom">Mi rol:</strong>
+                  Estructuré la lógica de datos e integré una base de datos
+                  relacional para el manejo seguro de la información.
+                </p>
+                <ul class="list-unstyled d-flex flex-wrap gap-2 mb-0">
+                  <li class="badge custom-badge">Angular</li>
+                  <li class="badge custom-badge">Node.js</li>
+                  <li class="badge custom-badge">PostgreSQL</li>
+                </ul>
+              </div>
+              <div class="card-footer bg-transparent border-0 pt-0 pb-3">
+                <div class="d-flex gap-2">
+                  <a
+                    href="#"
+                    class="btn btn-outline-light custom-btn-outline btn-sm w-50"
+                    target="_blank"
+                    ><i class="fab fa-github me-1"></i> Código</a
+                  >
+                  <a
+                    href="#"
+                    class="btn btn-primary custom-btn-primary btn-sm w-50"
+                    target="_blank"
+                    ><i class="fas fa-external-link-alt me-1"></i> Demo</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 custom-card d-flex flex-column">
+              <div class="card-body flex-grow-1">
+                <h4 class="card-title fw-bold text-primary-custom mb-3">
+                  Plataforma SAFETY
+                </h4>
+                <p class="card-text text-muted mb-2">
+                  <strong class="text-primary-custom">El problema:</strong> SAPE
+                  SAS necesitaba una interfaz clara para el monitoreo de
+                  accesorios GPS en niños y adultos mayores.
+                </p>
+                <p class="card-text text-muted mb-3">
+                  <strong class="text-primary-custom">Trabajo en grupo:</strong>
+                  Maqueté las vistas principales asegurando una navegación
+                  intuitiva y responsiva para los usuarios finales.
+                </p>
+                <ul class="list-unstyled d-flex flex-wrap gap-2 mb-0">
+                  <li class="badge custom-badge">HTML5</li>
+                  <li class="badge custom-badge">CSS3</li>
+                  <li class="badge custom-badge">JavaScript</li>
+                  <li class="badge custom-badge">Java</li>
+                </ul>
+              </div>
+
+              <div class="card-footer bg-transparent border-0 pt-0 pb-3">
+                <div class="d-flex gap-2">
+                  <a
+                    href="#"
+                    class="btn btn-outline-light custom-btn-outline btn-sm w-50"
+                    target="_blank"
+                    ><i class="fab fa-github me-1"></i> Código</a
+                  >
+                  <a
+                    href="#"
+                    class="btn btn-primary custom-btn-primary btn-sm w-50"
+                    target="_blank"
+                    ><i class="fas fa-external-link-alt me-1"></i> Demo</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 custom-card d-flex flex-column">
+              <div class="card-body flex-grow-1">
+                <h4 class="card-title fw-bold text-primary-custom mb-3">
+                  Algoritmia en C++
+                </h4>
+                <p class="card-text text-muted mb-2">
+                  <strong class="text-primary-custom">El problema:</strong>
+                  Requerimiento de soluciones eficientes para retos de
+                  programación y lógica estructurada.
+                </p>
+                <p class="card-text text-muted mb-3">
+                  <strong class="text-primary-custom">Mi rol:</strong>
+                  Desarrollé y documenté técnicamente algoritmos optimizados,
+                  asegurando la resolución exacta de cada problema.
+                </p>
+                <ul class="list-unstyled d-flex flex-wrap gap-2 mb-0">
+                  <li class="badge custom-badge">C++</li>
+                  <li class="badge custom-badge">Lógica de Programación</li>
+                </ul>
+              </div>
+              <div class="card-footer bg-transparent border-0 pt-0 pb-3">
+                <div class="d-flex gap-2">
+                  <a
+                    href="#"
+                    class="btn btn-outline-light custom-btn-outline btn-sm w-50"
+                    target="_blank"
+                    ><i class="fab fa-github me-1"></i> Código</a
+                  >
+                  <a
+                    href="#"
+                    class="btn btn-primary custom-btn-primary btn-sm w-50"
+                    target="_blank"
+                    ><i class="fas fa-play me-1"></i> Demo</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="py-5">
+        <h3 class="fw-bold mb-5 text-primary-custom">
+          Habilidades y Herramientas
+        </h3>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <h5 class="text-primary-custom mb-3">Lenguajes</h5>
+            <ul class="list-unstyled d-flex flex-wrap gap-2 mb-0">
+              <li class="badge custom-badge fs-6 px-3 py-2">JavaScript</li>
+              <li class="badge custom-badge fs-6 px-3 py-2">TypeScript</li>
+              <li class="badge custom-badge fs-6 px-3 py-2">C++</li>
+              <li class="badge custom-badge fs-6 px-3 py-2">HTML5 / CSS3</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5 class="text-primary-custom mb-3">Frameworks y Librerías</h5>
+            <ul class="list-unstyled d-flex flex-wrap gap-2 mb-0">
+              <li class="badge custom-badge fs-6 px-3 py-2">Angular</li>
+              <li class="badge custom-badge fs-6 px-3 py-2">Express</li>
+              <li class="badge custom-badge fs-6 px-3 py-2">Bootstrap</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5 class="text-primary-custom mb-3">
+              Bases de Datos y Herramientas
+            </h5>
+            <ul class="list-unstyled d-flex flex-wrap gap-2 mb-0">
+              <li class="badge custom-badge fs-6 px-3 py-2">Node.js</li>
+              <li class="badge custom-badge fs-6 px-3 py-2">PostgreSQL</li>
+              <li class="badge custom-badge fs-6 px-3 py-2">Git / GitHub</li>
+              <li class="badge custom-badge fs-6 px-3 py-2">APIs REST</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="py-5 mt-5 border-top"
+      style="border-color: var(--border-color) !important"
+    >
+      <div class="container d-flex flex-column align-items-center text-center">
+        <div class="d-flex gap-4 fs-4 mb-3 social-links">
+          <a
+            href="www.linkedin.com/in/marthacaro"
+            target="_blank"
+            aria-label="LinkedIn"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a
+            href="https://github.com/in/MarthajCaro"
+            target="_blank"
+            aria-label="GitHub"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="maito:caromartha175@gmail.com"
+            target="_blank"
+            aria-label="Correo"
+            ><i class="fas fa-envelope"></i
+          ></a>
+        </div>
+        <p class="text-muted mb-0">
+          Diseñado y desarrollado por
+          <strong class="text-primary-custom">Martha Caro</strong> - 2026
         </p>
+      </div>
+    </footer>
 
-        <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
-        <a href="cv.pdf" class="btn btn-outline-light">Descargar CV</a>
-    </div>
-
-    <!-- IMAGEN -->
-        <div class="col-12 col-md-6 text-center mt-4 mt-md-0">
-            <img src="img/fot.png" class="img-fluid" alt="perfil">
-        </div>
-
-    </div>
-</section>
-
-    <!-- PROYECTOS -->
-    <section id="proyectos" class="container text-center py-5">
-        <h2>PROYECTOS</h2>
-        <p>Algunos de los proyectos en los que he trabajado</p>
-
-        <div class="row">
-
-            <div class="col-12 col-md-4">
-                <div class="card p-4">
-                    <h5>Página web</h5>
-                    <p>En desarrollo...</p>
-                </div>
-            </div>
-
-            <div class="col-12 col-md-4">
-                <div class="card p-4">
-                    <h5>SAFE</h5>
-                    <p>En desarrollo...</p>
-                </div>
-            </div>
-
-            <div class="col-12 col-md-4">
-                <div class="card p-4">
-                    <h5>Planificador</h5>
-                    <p>En desarrollo...</p>
-                </div>
-            </div>
-        </div>
-</section>
-
-<!-- SOBRE MI -->
-<section id="sobre-mi" class="container py-5 text-white">
-    <div class="row align-items-center">
-
-        <div class="col-md-6">
-            <img src="img/pc.jpeg" class="img-fluid">
-        </div>
-
-    <div class="col-md-6">
-        <h2>Sobre mí</h2>
-            <p>
-            Soy Analista y desarrolladora de Sortware egresada de formación tecnológica.
-            Actualmente me estoy especializando en desarrollo web a través del bootcamp de Generation.
-            Me interesa crear aplicaciones funcionales, seguir aprendiendo y mejorar mis habilidades cada día.
-            </p>
-        </div>
-
-    </div>
-</section>
-
-<!-- TECNOLOGÍAS -->
-<section id="tecnologias" class="container text-center py-5">
-    <h2>Tecnologías</h2>
-    
-    <div class="d-flex justify-content-center gap-4 flex-wrap fs-2">
-
-        <i class="devicon-html5-plain colored"></i>
-        <i class="devicon-css3-plain colored"></i>
-        <i class="devicon-javascript-plain colored"></i>
-        <i class="devicon-java-plain colored"></i>
-        <i class="devicon-postgresql-plain colored"></i>
-        <i class="devicon-github-original"></i>
-
-    </div>
-</section>
-
-<!-- CONTACTO -->
-<section id="contacto" class="container text-center py-5 text-white">
-    <h2>Contacto</h2>
-    <div class="d-flex justify-content-center gap-4">
-    <a href="//www.linkedin.com/in/marthacaro" target="_blank">
-        <i class="bi bi-linkedin"></i>
-    </a>
-    <a href="https://github.com/MarthajCaro" target="_blank">
-        <i class="bi bi-github"></i>
-    </a>
-    <a href="maito:caromartha175@gmail.com">
-        <i class="bi bi-envelope-fill"></i>
-    </a>
-
-</div>
-</section>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-            crossorigin="anonymous"></script>
-
-<footer class="bg-dark text-white text-center py-4 mt-5">
-    <div class="container">
-        <p class="mb-1">Gracias por visitar mi portafolio 💜</p>
-        <small>© 2026 Martha Caro | Todos los derechos reservados</small>
-    </div>
-</footer>
-
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
